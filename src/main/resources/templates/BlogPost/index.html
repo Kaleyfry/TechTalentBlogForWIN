@@ -7,14 +7,18 @@
     <title>Kaley's Blog Site</title>
 
     <link rel="stylesheet" href="webjars/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <h1>Welcome to my Blog Site!</h1>
+        </div>
+        <div class="row">
             <h3>Check out our blogs!</h3>
-
+        </div>
+        <div class="row">
             <div th:each="blog:${posts}">
                 <div class="col-sm">
                     <div class="card">
@@ -27,6 +31,12 @@
                     </div><!-- End of .card -->
                 </div><!-- End of .col-sm -->
             </div><!-- End of posts loop -->
+
+        </div>
+        <div class="row">
+            <a href="/blogposts/new">
+                <button class="btn btn-primary">Submit A New Blog Post</button>
+            </a>
         </div>
     </div>
 
