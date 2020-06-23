@@ -5,14 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-//Creating an ID as primary Key
-//Title, author, and entry
 @Entity
 public class BlogPost {
 
     @Id
+
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String title, author, blogEntry;
 
     public BlogPost() {
@@ -53,4 +53,5 @@ public class BlogPost {
     public String toString() {
         return "BlogPost [author=" + author + ", blogEntry=" + blogEntry + ", id=" + id + ", title=" + title + "]";
     }
+
 }

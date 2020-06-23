@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" th:>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaley's Blog Site</title>
+</head>
+
+<body>
+
+    <h1>Welcome to my Blog Site!</h1>
+    <h3>Check out our blogs!</h3>
+    <p>Use the form below to submit a blog post:</p>
+    <form action="#" th:action="@{/}" th:object="${blogPost}" method="POST">
+        <label for="blogTitle">Title:</label>
+        <input type="text" name="blogTitle" th:field="*{author}" />
+        <in </form>
+
+</body>
+
+</html>
